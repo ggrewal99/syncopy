@@ -12,10 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
         { "code": "ar", "name": "Arabic" }
     ];
 
-    // Get the dropdown element
     let dropdown = document.querySelector("#language");
 
-    // Populate the dropdown with options
     languages.forEach(function (language) {
         let option = document.createElement("option");
         option.value = language.code;
