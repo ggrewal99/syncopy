@@ -64,6 +64,10 @@ header {
     gap: 3rem;
 }
 
+.fa-bars {
+    display: none;
+}
+
 .nav-right button {
     border: none;
     background-color: transparent;
@@ -182,7 +186,7 @@ header {
 
 .more-movies-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     row-gap: 3rem;
     justify-content: center;
 }
@@ -216,6 +220,12 @@ footer .bottom {
 .middle-left a {
     color: var(--font-color-secondary);
     opacity: 0.65;
+    padding: 0;
+}
+
+.middle-left {
+    display: flex;
+    gap: 2rem;
 }
 
 .middle-right {
@@ -245,4 +255,26 @@ footer a:hover {
 .locations {
     display: flex;
     gap: 1rem;
+    color: var(--font-color-secondary) !important;
+    opacity: 0.65;
+}
+
+.view-more-btn {
+    border: none;
+    background-color: transparent;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--font-family);
+    justify-self: center;
+    width: 100%;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 4px;
+    padding: 1rem 0;
+    display: none;
+}
+
+.view-more-btn i {
+    margin-left: 5px;
 }
