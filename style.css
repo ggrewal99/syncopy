@@ -7,6 +7,7 @@
 :root {
     --bg-color: #0b0b0b;
     --font-color: white;
+    --font-color-secondary: #e8e8e8;
     --font-family: "Lato", sans-serif;
     --primary-color: rgb(37, 150, 190);
     --primary-color-hover: rgb(30, 118, 150);
@@ -38,12 +39,15 @@ header {
 .nav-links {
     display: flex;
     justify-content: center;
+    z-index: 100;
 }
 
-.nav-links a {
+.nav-links a,
+.footer-links a,
+.middle-left a {
     text-decoration: none;
     color: var(--font-color);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding: 3rem 1.5rem;
     transition: all 0.5s;
 }
@@ -57,7 +61,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .nav-right button {
@@ -164,4 +168,81 @@ header {
 
 .carousel-control button:hover {
     cursor: pointer;
+}
+
+.more-content {
+    padding: 0 6rem;
+    margin: 6rem 0;
+}
+
+.more-content h1 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.more-movies-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 3rem;
+    justify-content: center;
+}
+
+.sm_poster {
+    height: 400px;
+    aspect-ratio: 2/3;
+    transition: all 0.2s;
+}
+
+.sm_poster:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+footer .top,
+footer .bottom {
+    display: flex;
+    justify-content: center;
+    padding: 0 6rem;
+}
+
+.middle {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6rem;
+    margin: 4rem 0;
+}
+
+.middle-left a {
+    color: var(--font-color-secondary);
+    opacity: 0.65;
+}
+
+.middle-right {
+    display: flex;
+    gap: 2rem;
+}
+
+footer .bottom {
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0 4rem 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    gap: 0.8rem;
+}
+
+.footer-links a {
+    font-size: 1.3rem !important;
+    transition: all 0.1s;
+}
+
+footer a:hover {
+    color: var(--primary-color);
+    transition: all 0.1s;
+}
+
+.locations {
+    display: flex;
+    gap: 1rem;
 }
