@@ -120,7 +120,7 @@
         overflow-x: hidden;
     }
     .fa-bars {
-        display: block;
+        display: block !important;
     }
 
     .nav-links {
