@@ -1,6 +1,6 @@
 # Syncopy page
 
-This fan-made responsive landing page is a showcase crafted for Syncopy Inc., an esteemed movie production company.
+This fan-made responsive page is a showcase crafted for Syncopy Inc., an esteemed movie production company.
 
 ## Screenshots
 
